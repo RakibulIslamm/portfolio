@@ -54,7 +54,7 @@ const HeroSection = (props: Props) => {
 			<div className="flex items-center gap-14 justify-between h-full text-white w-10/12 xs:w-full mx-auto relative z-20">
 				<div className="w-1/2 xs:w-full xs:text-center xs:flex xs:flex-col xs:justify-center">
 					<p
-						className={`text-[#00F0FF] ${philosopher.className} text-[30px] sm:text-[20px] xs:text-[15px] inline-block relative font-thin where`}
+						className={`text-[#00F0FF] ${philosopher.className} text-[30px] sm:text-[20px] xs:text-[20px] inline-block relative font-thin where`}
 					>
 						Where{" "}
 						<span className="inline-block w-[30px] sm:w-[20px] h-[2px] bg-[#00F0FF] rounded-full  line-line"></span>
