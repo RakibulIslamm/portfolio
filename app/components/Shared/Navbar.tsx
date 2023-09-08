@@ -14,7 +14,7 @@ const NavBar = ({ menuOpen, setMenuOpen }: Props) => {
 				<Image
 					width={36}
 					height={36}
-					className="w-[36px] h-[36px] sm:w-[26px] sm:h-[26px] xs:w-[20px] xs:h-[20px] object-cover logo "
+					className="w-[36px] h-[36px] sm:w-[26px] sm:h-[26px] xs:w-[25px] xs:h-[25px] object-cover logo "
 					src="/images/riLogo.png"
 					alt="ri logo"
 				/>

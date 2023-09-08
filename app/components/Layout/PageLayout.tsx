@@ -1,7 +1,7 @@
 "use client";
 import Menu from "../Shared/Menu";
 import NavBar from "../Shared/Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
@@ -12,6 +12,22 @@ export default function PageLayout({
 }) {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const pathname = usePathname();
+
+	useEffect(() => {
+		window.addEventListener("resize", () => {
+			// We execute the same script as before
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty("--vh", `${vh}px`);
+		});
+
+		return () => {
+			window.removeEventListener("resize", () => {
+				// We execute the same script as before
+				let vh = window.innerHeight * 0.01;
+				document.documentElement.style.setProperty("--vh", `${vh}px`);
+			});
+		};
+	}, []);
 
 	return (
 		<>

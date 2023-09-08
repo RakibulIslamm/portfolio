@@ -10,7 +10,7 @@ import PageLayout from "./components/Layout/PageLayout";
 export default function Home() {
 	return (
 		<PageLayout>
-			<main className="w-full min-h-screen relative">
+			<main className="w-full min-h-[calc(var(--vh, 1vh) * 100)] relative">
 				<HeroSection />
 				<Projects />
 				<AboutMe />
