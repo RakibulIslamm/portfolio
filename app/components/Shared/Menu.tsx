@@ -26,7 +26,7 @@ const Menu = ({ menuOpen, setMenuOpen }: Props) => {
 		<div
 			className={`max-w-[1440px] mx-auto bg-slate-950 bg-opacity-90 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center flex-col py-10 ${
 				menuOpen
-					? "visible opacity-100 filter backdrop-blur-[30px] min-h-screen h-full w-full z-[999]"
+					? "visible opacity-100 filter backdrop-blur-[30px] min-h-[calc(var(--vh, 1vh) * 100)] h-full w-full z-[999]"
 					: "opacity-0 invisible w-0 h-0"
 			} transition-all duration-500 z-0`}
 		>
