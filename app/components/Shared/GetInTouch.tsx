@@ -34,7 +34,7 @@ const GetInTouch = (props: Props) => {
 	return (
 		<div
 			id="footer"
-			className="w-10/12 xs:w-full xs:px-5 h-screen xs:h-[calc(var(--vh, 1vh) * 100)] mx-auto flex justify-center items-center flex-col footer relative z-50"
+			className="w-10/12 xs:w-full xs:px-5 h-screen mx-auto flex justify-center items-center flex-col footer relative z-50"
 		>
 			<div
 				style={{
